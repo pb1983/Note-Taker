@@ -1,4 +1,4 @@
-const db = require("../db/db.json")
+let db = require("../db/db.json")
 const randomString = require("randomstring")
 const notes = require("express").Router();
 fs = require("fs");
@@ -72,17 +72,23 @@ notes.delete('/:id', (req, res) => {
 
     const deleteId = req.params.id;
     let deleteNote = db.filter(note => note.id !== deleteId)
-
+    
+    db = deleteNote;
+    
     const newString = JSON.stringify(deleteNote, null, 2)
-
+    
     fs.writeFile("./public/db/db.json", newString, (err) => {
           if (err) {
             console.error(err)
             return res.status(400).json('Error in deleting item');
+        }   else {
+            console.log('Note deleted');
         }
     });
 
-    return res.json(newString)
+     res.json(deleteNote);
+
+    
 });
 
 
