@@ -7,7 +7,7 @@
 
 ## Description
 
-The Note Taker app utilizes Express.js to create and store notes on your web browser. Get and Post methods are used to retrieve and add content to the JSON file that is routed to the page via a designated API. Router and the Path module middleware, as well as programming modularization were used to keep the code legible and succinct. This project was also deployed on Heroku in order to 
+The Note Taker app utilizes Express.js to create and store notes on your web browser. Get, Post, and Delete methods are used to retrieve and add content to the JSON file that is routed to the page via a designated API. Router and the Path module middleware, as well as programming modularization were used to keep the code legible and succinct. This project was also deployed on Heroku in order to 
 leverage server access. 
 
 
