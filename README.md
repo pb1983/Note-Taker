@@ -27,3 +27,5 @@ leverage server access.
 [Repository](https://github.com/pb1983/Note-Taker)
 
 [Screenshot]
+
+![Note Taker](https://github.com/pb1983/Note-Taker/assets/25019626/a46c9a52-8582-4c8e-8e59-3d38b672a44b)
