@@ -1,9 +1,10 @@
 const db = require("../db/db.json")
 const randomString = require("randomstring")
 const notes = require("express").Router();
+fs = require("fs");
 
 
-
+//reads JSON file
 
 notes.get('/', (req, res) =>{
     res.json(db)
@@ -11,6 +12,7 @@ notes.get('/', (req, res) =>{
 );
 
 
+//Adds new notes to the JSON file and redisplays them to notes.html
 
 notes.post('/', (req, res) => {
 
@@ -53,12 +55,17 @@ notes.post('/', (req, res) => {
         
   });
 
+//Identifies the unique ID associated with each note on the page
+
 notes.get('/:id', (req, res) => {
  const requestedId = req.params.id;
  let [id] = db.filter((id) => id === requestedId)
  if (id)
  return res.json(id)
 });
+
+
+
 
 
 module.exports = notes;

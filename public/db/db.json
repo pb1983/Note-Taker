@@ -1,17 +1,18 @@
 [
   {
-    "title": "assgbss",
-    "text": "sdbsbrrb",
-    "id": "YFei"
+    "title": "Grocery List",
+    "text": "1. Almond Milk\n2. Bananas \n3. Peanut Butter\n4. Coffee\n5. Bread",
+    "id": "6e5C"
   },
   {
-    "title": "test",
-    "text": "test",
-    "id": "3t12"
+    "title": "Things To Study",
+    "text": "- Polymorphism\n- Inheritance \n- Encapsulation\n- Abstraction",
+    "id": "PuE8"
   },
   {
-    "title": "testtest",
-    "text": "testtest",
-    "id": "LzJf"
+    "title": "Movies To Watch",
+    "text": "1. Spider-Man: Across The Spider-Verse\n2. Talk To Me\n3. Asteroid City\n4. Beau Is Afraid\n",
+    "id": "CnSC"
   }
+
 ]
